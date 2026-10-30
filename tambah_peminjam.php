@@ -76,7 +76,7 @@ if (isset($_POST["submit"])) {
         $error_list[] = $kamus[$lang]['err_file_req'];
     }
 
-    // 4. Proses Simpan Data (Create)[cite: 70, 87]
+    // 4. Proses Simpan Data (Create)
     if (empty($error_list)) {
         if (move_uploaded_file($tmp_name, $tujuan)) {
             try {
@@ -138,7 +138,7 @@ if (isset($_POST["submit"])) {
                 </div>
             <?php endif; ?>
 
-            <!-- Form dengan method POST & enctype multipart[cite: 51, 66] -->
+            <!-- Form dengan method POST & enctype multipart -->
             <form method="POST" action="" enctype="multipart/form-data">
                 <div class="form-group">
                     <label><?= $kamus[$lang]['tambah_room'] ?></label>
